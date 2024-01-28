@@ -10,7 +10,8 @@ namespace ConsoleVetores.Vetor
         private double[] vet;
         private double sum;
 
-        public void AdicionarQuantidadeVetor(int quantidade) {
+        public void AdicionarQuantidadeVetor(int quantidade)
+        {
             vet = new double[quantidade];
 
             for (int i = 0; i < quantidade; i++)
@@ -18,13 +19,14 @@ namespace ConsoleVetores.Vetor
                 vet[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 sum += vet[i];
             }
-            Console.WriteLine("A média é: " + this.soma(sum,quantidade));
+            Console.WriteLine("A média é: " + this.Avg(sum, quantidade));
 
         }
-        private double soma(double soma, double quantidade){
+        private double Avg(double soma, double quantidade)
+        {
             return (soma / quantidade);
-            
-         }
-        
+
+        }
+
     }
 }
