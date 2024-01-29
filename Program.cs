@@ -10,7 +10,9 @@ namespace ConsoleVetores
             VetorArray Vetarray = new VetorArray();
             Console.Write("Informe a quantidade de Valores:");
             int valor = int.Parse(Console.ReadLine());
-            Vetarray.AdicionarQuantidadeVetor(valor);
+            Vetarray
+                .AdicionarQuantidadeVetor(valor)
+                .Build();
         }
     }
 }
