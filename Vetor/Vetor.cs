@@ -11,7 +11,7 @@ namespace ConsoleVetores.Vetor
         private double sum;
         public double result;
 
-        public VetorArray AdicionarQuantidadeVetor(int quantidade)
+        public void AdicionarQuantidadeVetor(int quantidade)
         {
             vet = new double[quantidade];
 
@@ -26,12 +26,9 @@ namespace ConsoleVetores.Vetor
         }
         private double Avg(double soma, double quantidade)
         {
-            return (soma / quantidade);
+            return  (soma / quantidade);
+            
 
-        }
-        public VetorArray Build()
-        {
-            return this;
         }
 
     }
